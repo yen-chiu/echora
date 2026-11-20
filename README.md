@@ -49,6 +49,14 @@ skills/     写作与人格相关的资料
 
 没有构建步骤：原生 HTML / CSS / JS，`lib/` 里的库直接引用，改完提交即可。
 
+## 后端
+
+只有 AI 页的「联网搜索 / 读网页」和聊天页的「后日谈」需要后端：
+
+- `https://api.yenchiu.com/search`、`https://api.yenchiu.com/read?url={url}`、`https://api.yenchiu.com/chat`。
+- 它跑在 **Cloudflare Worker** 上（搜索、读页、缓存与限流都在那边），源码不在本仓库；前端只有 `window.MIKO_API_BASE` 这一个覆盖点。
+- 没有后端也能用：搜索 / 读页会降级成前端直连，AI 对话本身不受影响。
+
 ## 跑起来
 
 因为全是相对路径，随便起个静态服务器就行：

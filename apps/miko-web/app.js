@@ -838,7 +838,8 @@
     if (st.lastOnline && $('#view-chat') && $('#view-chat').classList.contains('active')) updateChatStatus();
   }, 30000);
 
-  /* ---------------- 后日谈：接 api.yenchiu.com/chat ---------------- */
+  /* ---------------- 后日谈：接 api.yenchiu.com/chat --------------
+   后端跑在 Cloudflare Worker 上（只读代理），部署在 Cloudflare，不在本仓库。 */
 
   var API_BASE = window.MIKO_API_BASE || 'https://api.yenchiu.com';
   var AI_STATE = { state: 'unknown' };   // unknown | ok | off

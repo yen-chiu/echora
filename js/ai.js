@@ -19,6 +19,7 @@
 
   // 站点自带的只读代理（Cloudflare Worker）：搜索与读页都在服务端取，绕开 CORS，
   // 不保存查询内容。换掉它也能用：设置里填自己的 SearXNG / 读取代理即可。
+  // 下面两个端点都在 Cloudflare Worker 上（api.yenchiu.com）：搜索与读页的只读代理
   var SEARCH_ENDPOINT = 'https://api.yenchiu.com/search';
   var READER_ENDPOINT = 'https://api.yenchiu.com/read?url={url}';
   var ENDPOINT_VERSION = 3;
