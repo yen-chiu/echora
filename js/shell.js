@@ -184,7 +184,7 @@
 
   var LINKS = [
     { label: '博客', href: 'https://yenchiu.com/' },
-    { label: '源码', href: 'https://github.com/yen-chiu/Echora' },
+    { label: '源码', href: 'https://github.com/yen-chiu/echora' },
     { label: '联系', href: 'mailto:yenchiu.he@gmail.com' }
   ];
 

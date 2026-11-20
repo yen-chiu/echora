@@ -5,7 +5,7 @@
 **与念真聊天的小站。** 原本挂在博客下面的 `chat/`，2026-11 搬出来独立成一个仓库。
 
 <p>
-  <a href="https://yen-chiu.github.io/Echora/"><img src="https://img.shields.io/badge/Live-Echora-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live" /></a>
+  <a href="https://yen-chiu.github.io/echora/"><img src="https://img.shields.io/badge/Live-Echora-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live" /></a>
   <a href="https://yenchiu.com"><img src="https://img.shields.io/badge/Blog-yenchiu.com-a855f7?style=for-the-badge&logo=jekyll&logoColor=white" alt="Blog" /></a>
   <img src="https://img.shields.io/badge/Vue-2.x-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue" />
   <img src="https://img.shields.io/badge/build-none-22c3aa?style=flat-square" alt="No build" />
@@ -14,7 +14,7 @@
 
 </div>
 
-线上地址：<https://yen-chiu.github.io/Echora/>
+线上地址：<https://yen-chiu.github.io/echora/>
 
 ## 现在有什么
 
