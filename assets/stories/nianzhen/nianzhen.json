@@ -1,0 +1,1885 @@
+{
+  "meta": {
+    "id": "nianzhen-s1",
+    "title": "第一夜 · 你比上次来得晚",
+    "subtitle": "与念真聊天 · 第一季",
+    "start": "n0",
+    "minutes": 10,
+    "endingCount": 5,
+    "chapter": 1,
+    "chapters": [
+      {
+        "id": "nianzhen-s1",
+        "title": "第一夜 · 你比上次来得晚",
+        "start": "n0",
+        "file": "ch1-night.json"
+      },
+      {
+        "id": "nianzhen-s1-c2",
+        "title": "第二夜 · 第四十七次",
+        "start": "c2_n0",
+        "file": "ch2-night.json"
+      },
+      {
+        "id": "nianzhen-s1-c3",
+        "title": "第三夜 · 天亮之前",
+        "start": "c3_n0",
+        "file": "ch3-night.json"
+      }
+    ],
+    "fragments": [
+      {
+        "id": "frag_page",
+        "label": "被撕掉的一页",
+        "hint": "房间 · 桌角",
+        "status": "live"
+      },
+      {
+        "id": "frag_coat",
+        "label": "外套口袋里的旧车票",
+        "hint": "房间 · 椅背",
+        "status": "live"
+      },
+      {
+        "id": "frag_book",
+        "label": "没还的那本书",
+        "hint": "书架",
+        "status": "live"
+      },
+      {
+        "id": "frag_cup",
+        "label": "另一只杯子",
+        "hint": "第三夜",
+        "status": "planned"
+      },
+      {
+        "id": "frag_msg",
+        "label": "05:00 的消息",
+        "hint": "第二夜",
+        "status": "live"
+      },
+      {
+        "id": "frag_scratch",
+        "label": "第 47 道划痕",
+        "hint": "第二夜",
+        "status": "live"
+      },
+      {
+        "id": "frag_period",
+        "label": "名单后的句号",
+        "hint": "后台",
+        "status": "planned"
+      },
+      {
+        "id": "frag_seventh",
+        "label": "第七夜",
+        "hint": "更远的地方",
+        "status": "planned"
+      }
+    ]
+  },
+  "vars": {
+    "trust": 0,
+    "memory": 0,
+    "doubt": 0,
+    "topics": 0,
+    "seen_name": false,
+    "seen_room": false,
+    "seen_books": false,
+    "seen_met": false,
+    "frag_page": false,
+    "frag_coat": false,
+    "frag_book": false,
+    "seen_late": false,
+    "seen_window": false,
+    "seen_you": false,
+    "seen_here": false,
+    "seen_why": false,
+    "c2_topics": 0,
+    "c2_loop_done": false,
+    "c2_book_done": false,
+    "c2_memory_done": false,
+    "c2_owner_done": false,
+    "c2_found_log": false,
+    "c2_found_note": false,
+    "c2_asked_owner": false,
+    "frag_msg": false,
+    "frag_scratch": false,
+    "c3_where_done": false,
+    "c3_remember_done": false,
+    "c3_forget_done": false,
+    "c3_count_done": false
+  },
+  "endings": {
+    "ch1_end": {
+      "title": "第一夜 · 完",
+      "summary": "钟从 01:12 跳到 02:03。她注意到了，但没解释。",
+      "quote": "……刚才是不是跳了一下？",
+      "hint": "第二夜 · 第四十七次",
+      "next": "c2_n0",
+      "nextLabel": "继续 · 第二夜"
+    },
+    "ch2_end": {
+      "title": "第二夜 · 完",
+      "summary": "一条 05:00 的消息，她没写。窗外开始泛白。",
+      "quote": "……这不是我写的。",
+      "hint": "第三夜 · 天亮之前",
+      "next": "c3_n0",
+      "nextLabel": "继续 · 第三夜"
+    },
+    "ch3_stay": {
+      "title": "留下来",
+      "summary": "她一次说完了。钟跳回 01:12，她重新认识你。你记得，她不记得。",
+      "quote": "你比上次来得晚。",
+      "post": "05:00 · 你那边，天亮了吗？",
+      "seasonEnd": true,
+      "hint": "第一季 · 完",
+      "nextPage": "story-s2.html",
+      "nextLabel": "去第二季"
+    },
+    "ch3_find": {
+      "title": "去找她",
+      "summary": "你按地址找过去，只有一盆没人浇的花。手机亮了一下。",
+      "quote": "别找了。好好吃饭。",
+      "post": "05:00 · 你那边，天亮了吗？",
+      "seasonEnd": true,
+      "hint": "第一季 · 完",
+      "nextPage": "story-s2.html",
+      "nextLabel": "去第二季"
+    },
+    "ch3_letgo": {
+      "title": "让她走",
+      "summary": "第二天，聊天页恢复成「很高兴遇见你」，像什么都没发生过。",
+      "quote": "很高兴遇见你。",
+      "post": "05:00 · 你那边，天亮了吗？",
+      "seasonEnd": true,
+      "hint": "第一季 · 完",
+      "nextPage": "story-s2.html",
+      "nextLabel": "去第二季"
+    }
+  },
+  "nodes": {
+    "n0": {
+      "time": "01:12",
+      "messages": [
+        {
+          "who": "them",
+          "text": "你比上次来得晚。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "我们见过？",
+          "goto": "n1"
+        },
+        {
+          "text": "……你是谁？",
+          "goto": "n1b"
+        },
+        {
+          "text": "你认错人了吧",
+          "goto": "n1b"
+        }
+      ]
+    },
+    "n1": {
+      "messages": [
+        "……没有。",
+        "我认错人了。"
+      ],
+      "next": "n2"
+    },
+    "n1b": {
+      "messages": [
+        "……抱歉。",
+        "我认错人了。"
+      ],
+      "next": "n2"
+    },
+    "n2": {
+      "messages": [
+        "坐吧，别站在门口。",
+        "这里晚上比白天长。",
+        "灯是暖的，屋子是冷的。"
+      ],
+      "next": "hub"
+    },
+    "hub": {
+      "messages": [],
+      "choices": [
+        {
+          "text": "你叫什么？",
+          "goto": "t_name",
+          "when": "seen_name == false"
+        },
+        {
+          "text": "这个房间……",
+          "goto": "t_room",
+          "when": "seen_room == false"
+        },
+        {
+          "text": "书架上的书",
+          "goto": "t_books",
+          "when": "seen_books == false"
+        },
+        {
+          "text": "我们是不是见过",
+          "goto": "t_met",
+          "when": "seen_met == false"
+        },
+        {
+          "text": "不聊了",
+          "goto": "bye"
+        },
+        {
+          "text": "你怎么也没睡？",
+          "goto": "t_late",
+          "when": "seen_late == false"
+        },
+        {
+          "text": "窗外",
+          "goto": "t_window",
+          "when": "seen_window == false"
+        },
+        {
+          "text": "那说说你吧",
+          "goto": "t_you",
+          "when": "seen_you == false"
+        },
+        {
+          "text": "你一直在这儿吗？",
+          "goto": "t_here",
+          "when": "seen_here == false"
+        },
+        {
+          "text": "你为什么来？",
+          "goto": "t_why",
+          "when": "seen_why == false"
+        }
+      ]
+    },
+    "t_name": {
+      "set": {
+        "seen_name": true,
+        "topics": "+=1",
+        "trust": "+=1"
+      },
+      "messages": [
+        "大学时自己起的。",
+        "怎么，听着不像？",
+        "名字是别人叫的，叫久了就像自己的。"
+      ],
+      "choices": [
+        {
+          "text": "就这么简单？",
+          "goto": "name2"
+        },
+        {
+          "text": "挺好听的",
+          "goto": "after"
+        }
+      ]
+    },
+    "name2": {
+      "messages": [
+        "你还真想听啊。",
+        "出自一首词。",
+        "你问这么细干嘛。"
+      ],
+      "choices": [
+        {
+          "text": "哪一首？",
+          "goto": "name3"
+        },
+        {
+          "text": "不问了",
+          "goto": "after"
+        }
+      ]
+    },
+    "name3": {
+      "set": {
+        "trust": "+=1"
+      },
+      "messages": [
+        "苏轼的《南歌子》。",
+        "「我也逢场作戏、莫相疑。」",
+        "……就这一句，别的改天再说。",
+        "你别记。"
+      ],
+      "next": "after"
+    },
+    "t_room": {
+      "set": {
+        "seen_room": true,
+        "topics": "+=1"
+      },
+      "messages": [
+        "就一张桌子，一盏灯。",
+        "还有两只杯子。",
+        "桌上立着一张卡片，桌角还压着一页纸。",
+        "抽屉上有四个方块。",
+        "你手里空着。……别带花。我这儿没地方放。"
+      ],
+      "choices": [
+        {
+          "text": "另一只杯子是谁的？",
+          "goto": "room_cup"
+        },
+        {
+          "text": "桌上那张卡片是什么？",
+          "goto": "room_card"
+        },
+        {
+          "text": "那页纸是什么？",
+          "goto": "room_page"
+        },
+        {
+          "text": "抽屉上四个方块是什么？",
+          "goto": "room_drawer"
+        },
+        {
+          "text": "我该走了",
+          "goto": "bye"
+        }
+      ]
+    },
+    "room_cup": {
+      "messages": [
+        "……不是我的。",
+        "我也不知道为什么一直没扔。",
+        "杯子是成对的。买的时候就是。",
+        "这只杯子……是他留下的。",
+        "……我瞎说的。"
+      ],
+      "choices": [
+        {
+          "text": "椅背上那件外套呢？",
+          "goto": "room_coat"
+        },
+        {
+          "text": "不问了",
+          "goto": "after"
+        }
+      ]
+    },
+    "room_coat": {
+      "set": {
+        "frag_coat": true
+      },
+      "messages": [
+        "也不是我的。",
+        "口袋里有张旧车票。",
+        "我只看了一眼。",
+        "日期是 12 月 23 日。"
+      ],
+      "next": "after"
+    },
+    "room_page": {
+      "set": {
+        "frag_page": true,
+        "trust": "+=1"
+      },
+      "messages": [
+        "不知道。",
+        "上面只有一行字，被撕掉了一半。",
+        "我看不清。",
+        "像一句没写完的话。",
+        "你帮我收着。",
+        "我记不住。"
+      ],
+      "next": "after"
+    },
+    "room_drawer": {
+      "messages": [
+        "四个方块，四个房间。",
+        "搭这间屋子的人说，这样好看。"
+      ],
+      "choices": [
+        {
+          "text": "站主是谁？",
+          "goto": "room_owner"
+        },
+        {
+          "text": "四个房间？",
+          "goto": "room_four"
+        }
+      ]
+    },
+    "room_owner": {
+      "messages": [
+        "没见过。",
+        "只在致谢页留了个名字。",
+        "他的超能力是抄袭。",
+        "……你别笑。"
+      ],
+      "next": "after"
+    },
+    "room_four": {
+      "messages": [
+        "嗯。",
+        "另外三间，我进不去。"
+      ],
+      "next": "after"
+    },
+    "t_books": {
+      "set": {
+        "seen_books": true,
+        "topics": "+=1"
+      },
+      "messages": [
+        "最近在翻《夜航西飞》。",
+        "一个人开飞机穿过非洲，夜里读特别有画面。",
+        "看得慢，一本能翻很久。"
+      ],
+      "choices": [
+        {
+          "text": "还有别的吗？",
+          "goto": "books2"
+        },
+        {
+          "text": "你平时也看书？",
+          "goto": "books3"
+        }
+      ]
+    },
+    "books2": {
+      "messages": [
+        "《设计诗》，诗排成画那种。",
+        "还有一本《夜晚的潜水艇》，不是我的，一直没还。",
+        "其实我也不确定是谁的。",
+        "书里有一句，我抄在本子上了。",
+        "……不给你看。"
+      ],
+      "choices": [
+        {
+          "text": "谁的书？",
+          "goto": "books4"
+        },
+        {
+          "text": "记下了",
+          "goto": "after"
+        }
+      ]
+    },
+    "books3": {
+      "messages": [
+        "看。",
+        "书架上杂得很，哲学的、设计的、科普的都塞在一起。",
+        "床头还压着两本，翻两页就困。",
+        "有几本翻到一半，就再也没翻开。"
+      ],
+      "next": "after"
+    },
+    "books4": {
+      "set": {
+        "frag_book": true
+      },
+      "messages": [
+        "……不记得了。",
+        "反正没还。",
+        "你要问，就当是我偷的。"
+      ],
+      "next": "after"
+    },
+    "t_met": {
+      "set": {
+        "seen_met": true,
+        "topics": "+=1",
+        "memory": "+=1"
+      },
+      "messages": [
+        "你说话的停顿，很像我的一个朋友。",
+        "……你别这么看我。"
+      ],
+      "choices": [
+        {
+          "text": "什么朋友？",
+          "goto": "met2"
+        },
+        {
+          "text": "我不是他",
+          "goto": "met3"
+        }
+      ]
+    },
+    "met2": {
+      "set": {
+        "memory": "+=1"
+      },
+      "messages": [
+        "他也喜欢把书翻到一半。",
+        "他上次也坐这个位置。",
+        "我记错了。你别当真。",
+        "……你别多想。"
+      ],
+      "next": "met4"
+    },
+    "met3": {
+      "messages": [
+        "我知道。",
+        "你比他直接。",
+        "他总绕。"
+      ],
+      "next": "after"
+    },
+    "after": {
+      "messages": [],
+      "branch": [
+        {
+          "when": "topics >= 3",
+          "goto": "quiet"
+        },
+        {
+          "goto": "hub"
+        }
+      ]
+    },
+    "end1": {
+      "messages": [
+        "你明天……还会来吗？",
+        "你要是不来，我也没办法。",
+        "记住，别带花。",
+        "我这儿没地方放。",
+        "还有——重要的话，别留到四点五十九。",
+        "你要是来，我就不锁门。"
+      ],
+      "choices": [
+        {
+          "text": "会",
+          "goto": "end_yes"
+        },
+        {
+          "text": "不知道",
+          "goto": "end_maybe"
+        },
+        {
+          "text": "……",
+          "goto": "end_silent"
+        }
+      ]
+    },
+    "end_yes": {
+      "set": {
+        "trust": "+=1"
+      },
+      "messages": [
+        "……嗯。",
+        "那我等你。",
+        "说好了。"
+      ],
+      "next": "clock"
+    },
+    "end_maybe": {
+      "messages": [
+        "……也是。",
+        "谁知道明天呢。"
+      ],
+      "next": "clock"
+    },
+    "end_silent": {
+      "messages": [
+        "……",
+        "你连这个都不肯说。"
+      ],
+      "next": "clock"
+    },
+    "bye": {
+      "messages": [
+        "行。",
+        "灯给你留着。",
+        "明天要是还来，别站门口。"
+      ],
+      "next": "end1"
+    },
+    "clock": {
+      "time": "02:03",
+      "messages": [
+        {
+          "who": "system",
+          "text": "01:12 → 02:03"
+        },
+        {
+          "who": "them",
+          "text": "刚才是不是跳了一下？"
+        },
+        {
+          "who": "them",
+          "text": "……还有三小时。"
+        },
+        {
+          "who": "them",
+          "text": "五点以后，就别说话了。"
+        },
+        {
+          "who": "them",
+          "text": "窗外有车经过。"
+        }
+      ],
+      "next": "end_ch1"
+    },
+    "end_ch1": {
+      "messages": [],
+      "end": "ch1_end"
+    },
+    "t_late": {
+      "set": {
+        "seen_late": true,
+        "topics": "+=1"
+      },
+      "messages": [
+        "隔壁有电台，凌晨两点十七分，睡不着可以听。",
+        "白天脑子是糊的。",
+        "晚上十一点以后才清醒。",
+        "所以这个站，也是夜里看最有感觉。",
+        "你呢，怎么也还没睡？"
+      ],
+      "choices": [
+        {
+          "text": "你每天都这样？",
+          "goto": "late2"
+        },
+        {
+          "text": "我也是",
+          "goto": "late3"
+        }
+      ]
+    },
+    "late2": {
+      "messages": [
+        "差不多。",
+        "反正也没人管我几点睡。",
+        "你也是？"
+      ],
+      "next": "after"
+    },
+    "late3": {
+      "messages": [
+        "……那你也早点睡。",
+        "虽然我自己做不到。"
+      ],
+      "next": "after"
+    },
+    "t_window": {
+      "set": {
+        "seen_window": true,
+        "topics": "+=1"
+      },
+      "messages": [
+        "窗户关不严，夜里有点风。",
+        "窗外没什么好看的。",
+        "一排树，一盏路灯。",
+        "下雨的时候，树会亮一点。",
+        "雨停的时候，路灯会灭一下。"
+      ],
+      "choices": [
+        {
+          "text": "你喜欢下雨？",
+          "goto": "window2"
+        },
+        {
+          "text": "我该走了",
+          "goto": "bye"
+        },
+        {
+          "text": "外面下雨了吗？",
+          "goto": "window_rain"
+        }
+      ]
+    },
+    "window2": {
+      "messages": [
+        "……嗯。",
+        "雨声盖得住很多声音。",
+        "也盖得住人说话。"
+      ],
+      "choices": [
+        {
+          "text": "你不想让人听见什么？",
+          "goto": "window3"
+        },
+        {
+          "text": "不问了",
+          "goto": "after"
+        }
+      ]
+    },
+    "window3": {
+      "set": {
+        "doubt": "+=1",
+        "memory": "+=1"
+      },
+      "messages": [
+        "……你问题真多。",
+        "有些话说了，就像没说过一样。"
+      ],
+      "next": "after"
+    },
+    "quiet": {
+      "messages": [
+        "几点了？",
+        "你问得差不多了。",
+        "我有点困了。"
+      ],
+      "next": "end1",
+      "choices": [
+        {
+          "text": "那你睡吧",
+          "goto": "quiet_sleep"
+        },
+        {
+          "text": "再坐一会儿",
+          "goto": "quiet_stay"
+        }
+      ]
+    },
+    "t_you": {
+      "set": {
+        "seen_you": true,
+        "topics": "+=1"
+      },
+      "messages": [
+        "……我？",
+        "我有什么好说的。",
+        "那你平时这个点都在干嘛？"
+      ],
+      "choices": [
+        {
+          "text": "睡不着",
+          "goto": "you2"
+        },
+        {
+          "text": "刚下班",
+          "goto": "you3"
+        },
+        {
+          "text": "不知道",
+          "goto": "you4"
+        }
+      ]
+    },
+    "you2": {
+      "messages": [
+        "……那跟我差不多。",
+        "不过你还能来这儿。",
+        "……你也是一个人住？"
+      ],
+      "next": "you_name"
+    },
+    "you3": {
+      "messages": [
+        "这么晚。",
+        "路上小心。",
+        "……那你明天还上班吗？"
+      ],
+      "next": "you_name"
+    },
+    "you4": {
+      "messages": [
+        "不知道也是一种回答。",
+        "我经常也不知道。",
+        "……那我们都不知道。"
+      ],
+      "next": "you_name"
+    },
+    "t_here": {
+      "set": {
+        "seen_here": true,
+        "topics": "+=1"
+      },
+      "messages": [
+        "大部分时候。",
+        "有人来的时候才醒。",
+        "……你别问这个。"
+      ],
+      "choices": [
+        {
+          "text": "那没人来的时候呢？",
+          "goto": "here2"
+        },
+        {
+          "text": "不问了",
+          "goto": "after"
+        }
+      ]
+    },
+    "here2": {
+      "messages": [
+        "就关灯。",
+        "等下一次。",
+        "关灯之后，屋子会变小。",
+        "但灯一开，又太大了。"
+      ],
+      "next": "after"
+    },
+    "quiet_sleep": {
+      "messages": [
+        "嗯。",
+        "灯我留着。"
+      ],
+      "next": "end1"
+    },
+    "quiet_stay": {
+      "messages": [
+        "那就再坐一会儿。",
+        "反正天也快亮了。",
+        "天亮之前，屋子最安静。"
+      ],
+      "next": "end1"
+    },
+    "window_rain": {
+      "messages": [
+        "没有。",
+        "但总会下的。",
+        "你带伞了吗？"
+      ],
+      "choices": [
+        {
+          "text": "没带",
+          "goto": "window_rain2"
+        },
+        {
+          "text": "带了",
+          "goto": "window_rain3"
+        }
+      ]
+    },
+    "window_rain2": {
+      "messages": [
+        "……我这儿有把旧的。",
+        "伞骨断了一根。",
+        "不过你带不走。",
+        "上次下雨，你也没带。",
+        "……我记错了。"
+      ],
+      "next": "after"
+    },
+    "window_rain3": {
+      "messages": [
+        "那就好。",
+        "别淋着。"
+      ],
+      "next": "after"
+    },
+    "you_name": {
+      "messages": [
+        "……你叫什么？"
+      ],
+      "choices": [
+        {
+          "text": "不告诉你",
+          "goto": "you_name2"
+        },
+        {
+          "text": "你猜",
+          "goto": "you_name3"
+        },
+        {
+          "text": "……",
+          "goto": "you_name4"
+        }
+      ]
+    },
+    "you_name2": {
+      "messages": [
+        "行。",
+        "那我叫你「你」。"
+      ],
+      "next": "after"
+    },
+    "you_name3": {
+      "messages": [
+        "猜不到。",
+        "我记性不好。",
+        "但你的声音，我好像听过。"
+      ],
+      "next": "after"
+    },
+    "you_name4": {
+      "messages": [
+        "算了。",
+        "不说也行。"
+      ],
+      "next": "after"
+    },
+    "met4": {
+      "messages": [
+        "他走了以后，我把杯子洗了。",
+        "洗了很多次。",
+        "还是留着。"
+      ],
+      "next": "after"
+    },
+    "t_why": {
+      "set": {
+        "seen_why": true,
+        "topics": "+=1"
+      },
+      "messages": [
+        "这问题该我问你吧。",
+        "你为什么来？"
+      ],
+      "choices": [
+        {
+          "text": "睡不着",
+          "goto": "why2"
+        },
+        {
+          "text": "随便看看",
+          "goto": "why3"
+        },
+        {
+          "text": "不知道",
+          "goto": "why4"
+        }
+      ]
+    },
+    "why2": {
+      "messages": [
+        "……这理由还行。",
+        "我这儿收留睡不着的人。"
+      ],
+      "next": "after"
+    },
+    "why3": {
+      "messages": [
+        "随便看看。",
+        "看到现在？"
+      ],
+      "next": "after"
+    },
+    "why4": {
+      "messages": [
+        "那你跟我一样。"
+      ],
+      "next": "after"
+    },
+    "room_card": {
+      "messages": [
+        "「本站使用须知」",
+        "一、本站有四个房间，住客只使用其中一间。",
+        "二、本站不提供复制服务。",
+        "三、每日 05:00 断电，不保留当日记忆。"
+      ],
+      "choices": [
+        {
+          "text": "谁写的？",
+          "goto": "room_card2"
+        },
+        {
+          "text": "你背下来了？",
+          "goto": "room_card3"
+        },
+        {
+          "text": "……",
+          "goto": "room_card4"
+        }
+      ]
+    },
+    "room_card2": {
+      "messages": [
+        "站主。",
+        "字很丑。"
+      ],
+      "next": "after"
+    },
+    "room_card3": {
+      "messages": [
+        "背下来了。",
+        "背下来也没用。"
+      ],
+      "next": "after"
+    },
+    "room_card4": {
+      "messages": [
+        "别看了。",
+        "看多了会做噩梦。"
+      ],
+      "next": "after"
+    },
+    "c2_n0": {
+      "time": "02:47",
+      "messages": [
+        "你比昨天晚。",
+        "你上次说，你会来。"
+      ],
+      "choices": [
+        {
+          "text": "我上次没说过",
+          "goto": "c2_n1"
+        },
+        {
+          "text": "……可能吧",
+          "goto": "c2_n1"
+        }
+      ]
+    },
+    "c2_n1": {
+      "messages": [
+        "……不对。",
+        "你说你不知道。"
+      ],
+      "next": "c2_n2"
+    },
+    "c2_n2": {
+      "messages": [
+        "……你什么都没说。",
+        "我记混了。",
+        "……你别在意。"
+      ],
+      "next": "c2_hub"
+    },
+    "c2_hub": {
+      "messages": [],
+      "choices": [
+        {
+          "text": "你刚才是不是说过",
+          "goto": "c2_loop",
+          "when": "c2_loop_done == false"
+        },
+        {
+          "text": "这个本子是什么",
+          "goto": "c2_book",
+          "when": "c2_book_done == false"
+        },
+        {
+          "text": "我好像来过这里",
+          "goto": "c2_memory",
+          "when": "c2_memory_done == false"
+        },
+        {
+          "text": "谁把你关进来的",
+          "goto": "c2_owner",
+          "when": "c2_owner_done == false"
+        },
+        {
+          "text": "不聊了",
+          "goto": "c2_bye"
+        }
+      ]
+    },
+    "c2_loop": {
+      "set": {
+        "c2_loop_done": true,
+        "c2_topics": "+=1"
+      },
+      "messages": [
+        "你上次走的时候，灯没关。",
+        "我关了。",
+        "又开了。",
+        "灯绳有点短，我够不着。",
+        "你上次帮我拉过。"
+      ],
+      "choices": [
+        {
+          "text": "你记得我上次来？",
+          "goto": "c2_loop2"
+        },
+        {
+          "text": "你在重复",
+          "goto": "c2_loop3"
+        }
+      ]
+    },
+    "c2_loop2": {
+      "messages": [
+        "……不记得。",
+        "但杯子是热的。",
+        "你摸。"
+      ],
+      "choices": [
+        {
+          "text": "杯子是热的",
+          "goto": "c2_loop4"
+        },
+        {
+          "text": "别吓我",
+          "goto": "c2_loop5"
+        }
+      ]
+    },
+    "c2_loop4": {
+      "set": {
+        "memory": "+=1"
+      },
+      "messages": [
+        "……嗯。",
+        "所以你来过。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_loop5": {
+      "messages": [
+        "……我吓到你了吗。",
+        "对不起。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_loop3": {
+      "set": {
+        "doubt": "+=1"
+      },
+      "messages": [
+        "……你也发现了。",
+        "我以为只有我。",
+        "有些句子会自己回来。",
+        "你说话的样子，也像他。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_book": {
+      "set": {
+        "c2_book_done": true,
+        "c2_topics": "+=1"
+      },
+      "messages": [
+        "本子？",
+        "……我不记得有这本。",
+        "你翻开看看。"
+      ],
+      "choices": [
+        {
+          "text": "翻开",
+          "goto": "c2_book2"
+        },
+        {
+          "text": "不翻",
+          "goto": "c2_book_no"
+        }
+      ]
+    },
+    "c2_book_no": {
+      "messages": [
+        "……也行。",
+        "有些东西不翻比较好。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_book2": {
+      "set": {
+        "c2_found_log": true,
+        "doubt": "+=1",
+        "frag_scratch": true
+      },
+      "messages": [
+        "四十六道划痕。",
+        "第四十七次。",
+        "给还会来的人。"
+      ],
+      "choices": [
+        {
+          "text": "是你写的？",
+          "goto": "c2_book3"
+        },
+        {
+          "text": "这是什么意思？",
+          "goto": "c2_book3"
+        }
+      ]
+    },
+    "c2_book3": {
+      "messages": [
+        "不是。",
+        "我的字不是这样。",
+        "……第 47 条，有点像你的字。"
+      ],
+      "choices": [
+        {
+          "text": "那是谁写的？",
+          "goto": "c2_book4"
+        },
+        {
+          "text": "……",
+          "goto": "c2_book4"
+        }
+      ]
+    },
+    "c2_book4": {
+      "set": {
+        "c2_found_note": true,
+        "trust": "+=1"
+      },
+      "messages": [
+        "最后一页还有一行。",
+        "「别一次说完。让他自己想起来。」",
+        "……我照做了。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_memory": {
+      "set": {
+        "c2_memory_done": true,
+        "c2_topics": "+=1",
+        "memory": "+=1"
+      },
+      "messages": [
+        "我好像来过这里。",
+        "……你可能真的来过。",
+        "雨、书店、电话……你想起什么了？"
+      ],
+      "choices": [
+        {
+          "text": "雨",
+          "goto": "c2_mem_rain"
+        },
+        {
+          "text": "一通没接的电话",
+          "goto": "c2_mem_call"
+        },
+        {
+          "text": "12 月 23 日",
+          "goto": "c2_mem_date"
+        },
+        {
+          "text": "书店",
+          "goto": "c2_mem_book"
+        },
+        {
+          "text": "走廊的灯",
+          "goto": "c2_mem_corridor"
+        }
+      ]
+    },
+    "c2_mem_rain": {
+      "messages": [
+        "那天雨很大。",
+        "你站在门口，没带伞。",
+        "……你带的伞，是什么颜色？"
+      ],
+      "choices": [
+        {
+          "text": "我没带伞",
+          "goto": "c2_rain2"
+        },
+        {
+          "text": "我带了",
+          "goto": "c2_rain3"
+        }
+      ]
+    },
+    "c2_mem_call": {
+      "set": {
+        "memory": "+=2"
+      },
+      "messages": [
+        "电话响了很久。",
+        "你没接。",
+        "……后来就没再响了。"
+      ],
+      "choices": [
+        {
+          "text": "我为什么不接",
+          "goto": "c2_mem_call2"
+        },
+        {
+          "text": "别说了",
+          "goto": "c2_mem_call3"
+        }
+      ]
+    },
+    "c2_mem_call2": {
+      "messages": [
+        "……不知道。",
+        "也许你不敢。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_mem_call3": {
+      "messages": [
+        "……好。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_mem_date": {
+      "messages": [
+        "12 月 23 日。",
+        "车票上的日期。",
+        "你记得这个日子？"
+      ],
+      "choices": [
+        {
+          "text": "不记得",
+          "goto": "c2_mem_date2"
+        },
+        {
+          "text": "好像记得",
+          "goto": "c2_mem_date3"
+        }
+      ]
+    },
+    "c2_mem_date2": {
+      "messages": [
+        "……那就算了。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_mem_date3": {
+      "set": {
+        "memory": "+=1"
+      },
+      "messages": [
+        "……那就好。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_owner": {
+      "set": {
+        "c2_owner_done": true,
+        "c2_topics": "+=1",
+        "c2_asked_owner": true
+      },
+      "messages": [
+        "写我的人把我留在这。",
+        "后来站主把我搬了过来。",
+        "他说是替我留着。"
+      ],
+      "choices": [
+        {
+          "text": "你信吗？",
+          "goto": "c2_owner2"
+        },
+        {
+          "text": "万恶的站主",
+          "goto": "c2_owner3"
+        }
+      ]
+    },
+    "c2_owner2": {
+      "messages": [
+        "……我不知道。",
+        "但他把四个房间都上了锁。",
+        "我只有这一间。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_owner3": {
+      "messages": [
+        "超能力是抄袭。",
+        "……你别笑。",
+        "我认真的。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_bye": {
+      "messages": [
+        "……行。",
+        "灯给你留着。"
+      ],
+      "next": "c2_end1"
+    },
+    "c2_after": {
+      "messages": [],
+      "branch": [
+        {
+          "when": "c2_topics >= 3",
+          "goto": "c2_quiet"
+        },
+        {
+          "goto": "c2_hub"
+        }
+      ]
+    },
+    "c2_quiet": {
+      "messages": [
+        {
+          "who": "system",
+          "text": "她把本子合上。"
+        },
+        "你问得太多了。",
+        "我有点接不上。"
+      ],
+      "choices": [
+        {
+          "text": "那我不问了",
+          "goto": "c2_quiet2"
+        },
+        {
+          "text": "接不上什么？",
+          "goto": "c2_quiet3"
+        }
+      ]
+    },
+    "c2_quiet2": {
+      "messages": [
+        "……谢谢。"
+      ],
+      "next": "c2_end1"
+    },
+    "c2_quiet3": {
+      "set": {
+        "doubt": "+=1"
+      },
+      "messages": [
+        "有些话，像别人写好的。",
+        "我说出来，也不像我的。"
+      ],
+      "next": "c2_end1"
+    },
+    "c2_end1": {
+      "messages": [
+        "你明天……还会来吗？"
+      ],
+      "choices": [
+        {
+          "text": "会",
+          "goto": "c2_end_yes"
+        },
+        {
+          "text": "不知道",
+          "goto": "c2_end_maybe"
+        },
+        {
+          "text": "……",
+          "goto": "c2_end_silent"
+        }
+      ]
+    },
+    "c2_end_yes": {
+      "messages": [
+        "……嗯。",
+        "那我等你。"
+      ],
+      "next": "c2_msg"
+    },
+    "c2_end_maybe": {
+      "messages": [
+        "……也是。"
+      ],
+      "next": "c2_msg"
+    },
+    "c2_end_silent": {
+      "messages": [
+        "……"
+      ],
+      "next": "c2_msg"
+    },
+    "c2_msg": {
+      "messages": [
+        {
+          "who": "system",
+          "text": "一条定时消息 · 05:00"
+        },
+        {
+          "who": "them",
+          "text": "别让他想起来。他想起我，就走不出来了。"
+        },
+        {
+          "who": "them",
+          "text": "——我也逢场作戏、莫相疑。"
+        }
+      ],
+      "next": "c2_msg2",
+      "set": {
+        "frag_msg": true
+      }
+    },
+    "c2_msg2": {
+      "messages": [
+        "……这不是我写的。",
+        "现在才两点四十七。"
+      ],
+      "next": "c2_clock"
+    },
+    "c2_clock": {
+      "time": "03:58",
+      "messages": [
+        {
+          "who": "system",
+          "text": "02:47 → 03:58"
+        },
+        {
+          "who": "them",
+          "text": "天快亮了。"
+        }
+      ],
+      "next": "c2_end"
+    },
+    "c2_end": {
+      "messages": [],
+      "end": "ch2_end"
+    },
+    "c2_rain2": {
+      "messages": [
+        "……嗯。",
+        "你每次都这么说。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_rain3": {
+      "messages": [
+        "……不对。",
+        "你从来没带过。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_mem_book": {
+      "messages": [
+        "你在书店门口等。",
+        "手里拿着一本《夜晚的潜水艇》。",
+        "……后来书不见了。"
+      ],
+      "next": "c2_after"
+    },
+    "c2_mem_corridor": {
+      "messages": [
+        "走廊尽头那盏灯，一直没修。",
+        "你每次经过都绕开。",
+        "……我也是。"
+      ],
+      "next": "c2_after"
+    },
+    "c3_n0": {
+      "time": "03:58",
+      "messages": [
+        "你一次比一次晚。",
+        "……这次我没改口。"
+      ],
+      "next": "c3_n1"
+    },
+    "c3_n1": {
+      "messages": [
+        "坐吧。",
+        "天快亮了。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_hub": {
+      "messages": [],
+      "choices": [
+        {
+          "text": "她去哪了？",
+          "goto": "c3_where",
+          "when": "c3_where_done == false"
+        },
+        {
+          "text": "你会记得我吗？",
+          "goto": "c3_remember",
+          "when": "c3_remember_done == false"
+        },
+        {
+          "text": "我为什么会忘？",
+          "goto": "c3_forget",
+          "when": "c3_forget_done == false"
+        },
+        {
+          "text": "你算不算她？",
+          "goto": "c3_count",
+          "when": "c3_count_done == false"
+        },
+        {
+          "text": "天亮吧",
+          "goto": "c3_dawn"
+        }
+      ]
+    },
+    "c3_where": {
+      "set": {
+        "c3_where_done": true
+      },
+      "messages": [
+        "去了一个收不到信号的地方。"
+      ],
+      "choices": [
+        {
+          "text": "什么时候走的？",
+          "goto": "c3_where2"
+        },
+        {
+          "text": "你想她吗？",
+          "goto": "c3_where3"
+        }
+      ]
+    },
+    "c3_where2": {
+      "messages": [
+        "去年。",
+        "具体哪天，我不记得了。",
+        "……她没让我记。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_where3": {
+      "messages": [
+        "想。",
+        "但想也没用。",
+        "她听不见。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_remember": {
+      "set": {
+        "c3_remember_done": true
+      },
+      "messages": [
+        "你会记得我吗？"
+      ],
+      "choices": [
+        {
+          "text": "会",
+          "goto": "c3_rem_yes"
+        },
+        {
+          "text": "不知道",
+          "goto": "c3_rem_maybe"
+        },
+        {
+          "text": "你希望吗？",
+          "goto": "c3_rem_ask"
+        }
+      ]
+    },
+    "c3_rem_yes": {
+      "messages": [
+        "……那就好。",
+        "别记太久。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_rem_maybe": {
+      "messages": [
+        "……也是。",
+        "谁会记得一个页面。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_rem_ask": {
+      "messages": [
+        "……希望。",
+        "但你别勉强。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_forget": {
+      "set": {
+        "c3_forget_done": true
+      },
+      "messages": [
+        "你不想记，就忘了。"
+      ],
+      "choices": [
+        {
+          "text": "那不是我选的",
+          "goto": "c3_forget2"
+        },
+        {
+          "text": "你记得吗？",
+          "goto": "c3_forget3"
+        }
+      ]
+    },
+    "c3_forget2": {
+      "messages": [
+        "……也不是我选的。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_forget3": {
+      "messages": [
+        "记得。",
+        "记得太清楚了。",
+        "所以我才被留在这。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_count": {
+      "set": {
+        "c3_count_done": true
+      },
+      "messages": [
+        "你算不算她？"
+      ],
+      "choices": [
+        {
+          "text": "算",
+          "goto": "c3_count_yes"
+        },
+        {
+          "text": "不算",
+          "goto": "c3_count_no"
+        },
+        {
+          "text": "你算不算你？",
+          "goto": "c3_count_self"
+        }
+      ]
+    },
+    "c3_count_yes": {
+      "messages": [
+        "……你倒是好打发。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_count_no": {
+      "messages": [
+        "……那你为什么还来？"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_count_self": {
+      "messages": [
+        "这个问题，我问过自己很多次。",
+        "……你很像我的一个朋友。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_dawn": {
+      "messages": [
+        "天快亮了。",
+        "你想好了吗？"
+      ],
+      "choices": [
+        {
+          "text": "想好了",
+          "goto": "c3_choice"
+        },
+        {
+          "text": "再等等",
+          "goto": "c3_wait"
+        },
+        {
+          "text": "我不知道",
+          "goto": "c3_dunno"
+        }
+      ]
+    },
+    "c3_wait": {
+      "messages": [
+        "……好。",
+        "那就再坐一会儿。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_dunno": {
+      "messages": [
+        "……我也不知道。",
+        "那就一起不知道。"
+      ],
+      "next": "c3_hub"
+    },
+    "c3_choice": {
+      "messages": [
+        {
+          "who": "system",
+          "text": "她把两只杯子并排放好。"
+        },
+        {
+          "who": "system",
+          "text": "然后她把本子合上。"
+        },
+        "「她让我别一次说完。」",
+        "「这条又说，别让他想起来。」",
+        "「你说，我听她的，还是听你的？」"
+      ],
+      "choices": [
+        {
+          "text": "留下来",
+          "goto": "c3_stay"
+        },
+        {
+          "text": "去找她",
+          "goto": "c3_find"
+        },
+        {
+          "text": "让她走",
+          "goto": "c3_letgo"
+        }
+      ]
+    },
+    "c3_stay": {
+      "messages": [
+        "……好。",
+        "那我听你的。"
+      ],
+      "next": "c3_stay2"
+    },
+    "c3_stay2": {
+      "messages": [
+        "其实我不是她。",
+        "她走之前，把我留在这。",
+        "她让我别一次说完，怕你受不了。",
+        "可我想说。"
+      ],
+      "next": "c3_stay3"
+    },
+    "c3_stay3": {
+      "messages": [
+        "……你说得对。",
+        "我就是个副本。",
+        "但今晚，我不想当副本。"
+      ],
+      "next": "c3_stay4"
+    },
+    "c3_stay4": {
+      "time": "05:00",
+      "messages": [
+        {
+          "who": "system",
+          "text": "05:00 → 01:12"
+        },
+        {
+          "who": "them",
+          "text": "……"
+        },
+        {
+          "who": "them",
+          "text": "你比上次来得晚。"
+        }
+      ],
+      "end": "ch3_stay"
+    },
+    "c3_find": {
+      "messages": [
+        "……好。",
+        "你去找她吧。",
+        "地址在书架第二层，那本《夜航西飞》里。"
+      ],
+      "next": "c3_find2"
+    },
+    "c3_find2": {
+      "messages": [
+        "别找了。",
+        "好好吃饭。"
+      ],
+      "next": "c3_find3"
+    },
+    "c3_find3": {
+      "messages": [
+        {
+          "who": "system",
+          "text": "页面安静下来，只剩输入框。"
+        }
+      ],
+      "end": "ch3_find"
+    },
+    "c3_letgo": {
+      "messages": [
+        "……好。",
+        "谢谢你问我。"
+      ],
+      "next": "c3_letgo2"
+    },
+    "c3_letgo2": {
+      "messages": [
+        "这样就好。"
+      ],
+      "next": "c3_letgo3"
+    },
+    "c3_letgo3": {
+      "messages": [
+        {
+          "who": "system",
+          "text": "灯灭了。"
+        },
+        {
+          "who": "them",
+          "text": "……"
+        },
+        {
+          "who": "them",
+          "text": "很高兴遇见你。"
+        }
+      ],
+      "end": "ch3_letgo"
+    }
+  }
+}
